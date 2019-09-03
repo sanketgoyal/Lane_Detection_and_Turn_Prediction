@@ -271,7 +271,7 @@ def inverse_homo(turn,image, sobel, Minv, polyfit_leftx, polyfit_rightx, ploty):
 
 
 #This function compute the histogram in such a way that it generates the sum of number of white pixel in the y direction for a particuar value of x
-
+#img[img.shape[0]//2:,:]: For selecting the bottom half of the image
 def function_histogram(img):
     histogram = np.sum(img[img.shape[0]//2:,:], axis=0)
     return histogram
